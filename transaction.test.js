@@ -4,14 +4,14 @@ describe('transaction', () => {
   it('adds 1000', () => {
     transaction = new Transaction();
     transaction.deposit(1000);
-    expect(transaction.balance).toBe(1000);
+    expect(transaction.amount).toBe(1000);
   });
 
   it('add 1000 and 2000', () => {
     transaction = new Transaction();
     transaction.deposit(1000);
     transaction.deposit(2000);
-    expect(transaction.balance).toBe(3000);;
+    expect(transaction.amount).toBe(2000);;
   });
 
 
@@ -20,7 +20,7 @@ describe('transaction', () => {
     transaction.deposit(1000);
     transaction.deposit(2000);
     transaction.withdraw(500);
-    expect(transaction.balance).toBe(2500);;
+    expect(transaction.amount).toBe(-500);;
 
   })
 
