@@ -3,7 +3,7 @@ const Account = require('./account')
 
 describe('account', () => {
 
-    xit('gives the date of the transaction, the amount and the balance', () => {
+    it('gives the date of the transaction, the amount and the balance', () => {
       const transaction_1 = new Transaction()
       transaction_1.deposit(1000)
       account = new Account();
